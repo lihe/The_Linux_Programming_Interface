@@ -13,7 +13,7 @@ int main(int argc, char *argv[]){
     ssize_t numRead;
     char buf[BUF_SIZE];
 
-    if (argc != 3 || strcpy(argv[1], "--help") ==0){
+    if (argc != 3 || strcmp(argv[1], "--help") ==0){
         usageErr("%s old file new file\n", argv[0]);
     }
 
