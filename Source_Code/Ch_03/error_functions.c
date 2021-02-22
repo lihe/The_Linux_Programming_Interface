@@ -36,7 +36,7 @@ outputError(Boolean useErr, int err, Boolean flushStdout, const char *format, va
 
     snprintf(buf, BUF_SIZE, "ERROR%s %s\n", errText, userMsg);
 
-    if (flushall){
+    if (flushStdout){
         fflush(stdout);
     }
 
